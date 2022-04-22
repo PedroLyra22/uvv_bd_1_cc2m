@@ -174,6 +174,8 @@ VALUES( 'Pesquisa', 5, '33344555587', '1988-05-22');
 INSERT INTO elmasri.departamento ( nome_departamento, numero_departamento, cpf_gerente, data_inicio_gerente)
 VALUES( 'Administração', 4, '98765432168', ' 1995-01-01');
 /*Inserção dos valores na tabela departamento.*/
+
+
 INSERT INTO elmasri.localizacoes_departamento( numero_departamento, local)
 VALUES( 1, ' São Paulo');
 INSERT INTO elmasri.localizacoes_departamento( numero_departamento, local)
@@ -235,3 +237,20 @@ VALUES( '98765432168', 20, '15.0');
 INSERT INTO elmasri.trabalha_em( cpf_funcionario, numero_projeto, horas)
 VALUES( '88866555576', 20, '0');
 /*Inserção dos valores na tabela trabalha_em.*/
+
+
+INSERT INTO elmasri.dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+VALUES( '33344555587', 'Alícia', 'F', '1986-04-05', 'Filha');
+INSERT INTO elmasri.dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+VALUES( '33344555587', 'Tiago', 'M', '1983-10-25', 'Filho');
+INSERT INTO elmasri.dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+VALUES( '33344555587', 'Janaína', 'F', '1958-05-03', 'Esposa');
+INSERT INTO elmasri.dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+VALUES( '98765432168', 'Antonio', 'M', '1942-02-28', 'Marido');
+INSERT INTO elmasri.dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+VALUES( '12345678966', 'Michael', 'M', '1988-01-04', 'Filho');
+INSERT INTO elmasri.dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+VALUES( '12345678966', 'Alícia', 'F', '1988-12-30', 'Filha');
+INSERT INTO elmasri.dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
+VALUES( '12345678966', 'Elizabeth', 'F', '1967-05-05', 'Esposa');
+/*Inserção dos valores na tabela dependente.*/
