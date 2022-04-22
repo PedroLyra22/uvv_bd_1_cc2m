@@ -1,2 +1,4 @@
 ## 3.4:
-### Aqui está o arquivo com o script do modelo do *ELMASRI* implementado no PostgreSQL.
+### Aqui está os arquivos referente a implementação do modelo do *ELMASRI* no PostgreSQL
+
+>- script_PostgreSQL está o script do banco de dados do modelo eslmasri.
