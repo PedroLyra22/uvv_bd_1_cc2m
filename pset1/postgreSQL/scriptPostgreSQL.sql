@@ -164,7 +164,7 @@ INSERT INTO elmasri.funcionario (cpf,primeiro_nome, nome_meio, ultimo_nome, data
 VALUES ('66688444476', 'Ronaldo', 'K', 'Lima', '1962-09-15','RuaRebouças65,Piracicaba,SP', 'M', '38000', '33344555587', 5 );
 INSERT INTO elmasri.funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
 VALUES ('45345345376','Joice', 'A', 'Leite', '1972-07-31','AvLucasObes74,SãoPaulo,SP', 'F', '25000', '33344555587', 5 );
-/*Inserção dos valores na tabela funcionario. Jorge tem o cpf igual ao cpf_supervisor já que ele é o supervisor*/
+/*Inserção dos valores na tabela funcionario. Jorge tem o cpf igual ao cpf_supervisor já que ele não tem supervisor*/
 
 
 INSERT INTO elmasri.departamento ( nome_departamento, numero_departamento, cpf_gerente, data_inicio_gerente)
