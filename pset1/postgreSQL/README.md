@@ -1,5 +1,5 @@
 ## 3.4:  Implementação no PostgreSQL
-### Para corrigir essa atividade corretamente, primeiro é necessário ver o arquivo *terminal.txt* e inserir os comando no terminal na ordem indicada. Depois disso é só acessar o banco de dados criado e rodas o script do arquivo **scriptPostgreSQL.sql**.
+### Para corrigir essa atividade corretamente, primeiro é necessário ver o arquivo *terminal.txt* e inserir os comandos no terminal na ordem indicada. Depois disso é só acessar o banco de dados criado e rodar o script do arquivo **scriptPostgreSQL.sql**.
 
 ### Aqui está os arquivos referente a implementação do modelo do *ELMASRI* no PostgreSQL:
 
