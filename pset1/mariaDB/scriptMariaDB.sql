@@ -8,7 +8,8 @@ CREATE TABLE funcionario (
                 endereco VARCHAR(45),
                 sexo CHAR(1),
                 salario DECIMAL(10,2),
-                cpf_supervisor CHAR(11) NOT NULL,
+                cpf_supervisor CHAR(11),
+                --cpf_supervisor alterado retirando a restrição de NOT NULL
                 numero_departamento INT NOT NULL,
                 PRIMARY KEY (cpf)
                 );
