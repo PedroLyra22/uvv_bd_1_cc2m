@@ -199,7 +199,7 @@ INSERT INTO funcionario (cpf,primeiro_nome, nome_meio, ultimo_nome, data_nascime
 VALUES ('66688444476', 'Ronaldo', 'K', 'Lima', '1962-09-15','RuaRebouças65,Piracicaba,SP', 'M', '38000', '33344555587', 5 );
 INSERT INTO funcionario (cpf, primeiro_nome, nome_meio, ultimo_nome, data_nascimento, endereco, sexo, salario, cpf_supervisor, numero_departamento ) 
 VALUES ('45345345376','Joice', 'A', 'Leite', '1972-07-31','AvLucasObes74,SãoPaulo,SP', 'F', '25000', '33344555587', 5 );
-/*Inserção dos valores na tabela funcionario. Jorge tem o cpf nulo já que ele não tem supervisor*/
+--Inserção dos valores na tabela funcionario. Jorge tem o cpf nulo já que ele não tem supervisor.
 
 
 INSERT INTO departamento ( nome_departamento, numero_departamento, cpf_gerente, data_inicio_gerente)
@@ -208,7 +208,7 @@ INSERT INTO departamento ( nome_departamento, numero_departamento, cpf_gerente, 
 VALUES( 'Pesquisa', 5, '33344555587', '1988-05-22');
 INSERT INTO departamento ( nome_departamento, numero_departamento, cpf_gerente, data_inicio_gerente)
 VALUES( 'Administração', 4, '98765432168', ' 1995-01-01');
-/*Inserção dos valores na tabela departamento.*/
+--Inserção dos valores na tabela departamento.
 
 
 INSERT INTO localizacoes_departamento( numero_departamento, local)
@@ -221,7 +221,7 @@ INSERT INTO localizacoes_departamento( numero_departamento, local)
 VALUES( 5, ' Itu');
 INSERT INTO localizacoes_departamento( numero_departamento, local)
 VALUES( 5, ' São Paulo');
-/*Inserção dos valores na tabela localizacoes_departamento.*/
+--Inserção dos valores na tabela localizacoes_departamento.
 
 
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
@@ -236,7 +236,7 @@ INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departa
 VALUES( 'Reorganização', 20, 'São Paulo', 1);
 INSERT INTO projeto( nome_projeto, numero_projeto, local_projeto, numero_departamento)
 VALUES( 'Novosbenefícios', 30, 'Mauá', 4);
-/*Inserção dos valores na tabela projeto.*/
+--Inserção dos valores na tabela projeto.
 
 
 INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
@@ -253,7 +253,7 @@ INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento,
 VALUES( '12345678966', 'Alícia', 'F', '1988-12-30', 'Filha');
 INSERT INTO dependente( cpf_funcionario, nome_dependente, sexo, data_nascimento, parentesco)
 VALUES( '12345678966', 'Elizabeth', 'F', '1967-05-05', 'Esposa');
-/*Inserção dos valores na tabela dependente.*/
+--Inserção dos valores na tabela dependente.
 
 
 INSERT INTO trabalha_em( cpf_funcionario, numero_projeto, horas)
@@ -288,4 +288,4 @@ INSERT INTO trabalha_em( cpf_funcionario, numero_projeto, horas)
 VALUES( '98765432168', 20, '15.0');
 INSERT INTO trabalha_em( cpf_funcionario, numero_projeto, horas)
 VALUES( '88866555576', 20, '0');
-/*Inserção dos valores na tabela trabalha_em.*/
+--Inserção dos valores na tabela trabalha_em.
