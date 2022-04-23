@@ -6,6 +6,7 @@ CREATE TABLE funcionario (
                 ultimo_nome VARCHAR(15) NOT NULL,
                 data_nascimento DATE,
                 endereco VARCHAR(45),
+                --quantidade de caracteres alterada para inserir os endereços de forma correta.
                 sexo CHAR(1),
                 salario DECIMAL(10,2),
                 cpf_supervisor CHAR(11),
