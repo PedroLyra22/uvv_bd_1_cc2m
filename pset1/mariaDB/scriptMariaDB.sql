@@ -5,13 +5,13 @@ CREATE TABLE funcionario (
                 nome_meio CHAR(1),
                 ultimo_nome VARCHAR(15) NOT NULL,
                 data_nascimento DATE,
-                endereco VARCHAR(30),
+                endereco VARCHAR(45),
                 sexo CHAR(1),
                 salario DECIMAL(10,2),
                 cpf_supervisor CHAR(11) NOT NULL,
                 numero_departamento INT NOT NULL,
                 PRIMARY KEY (cpf)
-);
+                );
 
 ALTER TABLE funcionario COMMENT 'Tabela que armazena as informações dos funcionários.';
 
@@ -43,7 +43,8 @@ CREATE TABLE dependente (
                 data_nascimento DATE,
                 parentesco VARCHAR(15),
                 PRIMARY KEY (cpf_funcionario, nome_dependente)
-);
+                );
+
 
 ALTER TABLE dependente COMMENT 'Tabela que armazena as informações dos dependentes dos funcionários.';
 
@@ -64,7 +65,8 @@ CREATE TABLE departamento (
                 cpf_gerente CHAR(11) NOT NULL,
                 data_inicio_gerente DATE,
                 PRIMARY KEY (numero_departamento)
-);
+                );
+
 
 ALTER TABLE departamento COMMENT 'Tabela que armazena as informações dos departamentos.';
 
@@ -87,7 +89,8 @@ CREATE TABLE projeto (
                 local_projeto VARCHAR(15),
                 numero_departamento INT NOT NULL,
                 PRIMARY KEY (numero_projeto)
-);
+                );
+
 
 ALTER TABLE projeto COMMENT 'Tabela que armazena as informações sobre os projetos dos departamentos.';
 
@@ -109,7 +112,8 @@ CREATE TABLE trabalha_em (
                 numero_projeto INT NOT NULL,
                 horas DECIMAL(3,1) NOT NULL,
                 PRIMARY KEY (cpf_funcionario, numero_projeto)
-);
+                );
+
 
 ALTER TABLE trabalha_em COMMENT 'Tabela para armazenar quais funcionários trabalham em quais projetos.';
 
@@ -124,7 +128,8 @@ CREATE TABLE localizacoes_departamento (
                 numero_departamento INT NOT NULL,
                 local VARCHAR(15) NOT NULL,
                 PRIMARY KEY (numero_departamento, local)
-);
+                );
+
 
 ALTER TABLE localizacoes_departamento COMMENT 'Tabela que armazena as possíveis localizações dos departamentos.';
 
@@ -133,9 +138,6 @@ ALTER TABLE localizacoes_departamento MODIFY COLUMN numero_departamento INTEGER 
 ALTER TABLE localizacoes_departamento MODIFY COLUMN local VARCHAR(15) COMMENT 'Localização do departamento. Faz parte da PK desta tabela.';
 
 
-/*
-Warning: MySQL does not support this relationship's deferrability policy (INITIALLY_DEFERRED).
-*/
 ALTER TABLE funcionario ADD CONSTRAINT funcionario_funcionario_fk
 FOREIGN KEY (cpf_supervisor)
 REFERENCES funcionario (cpf)
