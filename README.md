@@ -1,4 +1,4 @@
-# PSET1
+# Desinge Desenvolvimento de Banco de Dados
 ## Aluno: Pedro Calezane Lyra
 ### Professor: Abrantes Araujo Silva Filho
 ### Monitora: Suellen Miranda Amorim
